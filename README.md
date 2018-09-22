@@ -1,2 +1,2 @@
-# TM-2018.github.io
+# tomasz-milaszewki.github.io
 This is my homepage
