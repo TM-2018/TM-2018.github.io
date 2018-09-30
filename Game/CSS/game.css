@@ -5,40 +5,50 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 800px;
-    height: 600px;
-    margin: 50px auto;
-    outline: 1px solid black;
+    width: 640px;
+    height: 500px;
+    margin: 20px auto;
 }
 .infoPanel{
     display: flex;
     flex-direction: column;
-    width: 150px;
+    width: 140px;
     height: 500px;
-    margin-right: 50px;
+    margin-right: 10px;    
     outline: 1px solid black;
 }
-.timerContainer, scoreContainer, lostEggsContainer {
+.timerContainer, .scoreContainer, .lostEggsContainer {
     display: flex;
     flex-direction: column;
-    width: 100px;
-    height: 100px;
-    margin: 25px;
+    width: 120px;
+    height: 80px;
+    margin: 5px auto;
     outline: 1px solid black;
 }
 
-.timerText, timerValue, scoreText, scoreValue, lostEggsText, lostEggsValue {
-    flex-grow: 1;
-    margin: 5px;
-    outline: 1px solid black;
+.timerText, .timerValue, .scoreText, .scoreValue, .lostEggsText, .lostEggsValue {
+    width: 120px;
+    height: 40px;
+}
+.timerText, .scoreText, .lostEggsText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.timerContainer {
+    margin-top: 10px;
 }
 .boardContainer {
     display: flex;
     flex-direction: column;
     width: 500px;
+    height: 500px;
     flex-wrap: wrap;
+    outline: 1px solid black;
 }
-.eggContainer {
+.eggsContainer {
     height:20px;
 }
 .playField {
@@ -55,7 +65,7 @@ body {
 
 }
 .redEgg {
-    
+
 }
 .basketContainer {
     position: relative;
@@ -64,4 +74,6 @@ body {
 .basket {
     position: absolute;
     height: 20px;
+    width: 40px;
+    outline: 1px solid black;
 }
