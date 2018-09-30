@@ -1,0 +1,67 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 600px;
+    margin: 50px auto;
+    outline: 1px solid black;
+}
+.infoPanel{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 500px;
+    margin-right: 50px;
+    outline: 1px solid black;
+}
+.timerContainer, scoreContainer, lostEggsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    outline: 1px solid black;
+}
+
+.timerText, timerValue, scoreText, scoreValue, lostEggsText, lostEggsValue {
+    flex-grow: 1;
+    margin: 5px;
+    outline: 1px solid black;
+}
+.boardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    flex-wrap: wrap;
+}
+.eggContainer {
+    height:20px;
+}
+.playField {
+    height: 100px;
+    flex-grow: 1;
+}
+.egg {
+
+}
+.yellowEgg {
+
+}
+.greenEgg {
+
+}
+.redEgg {
+    
+}
+.basketContainer {
+    position: relative;
+    height: 20px;
+}
+.basket {
+    position: absolute;
+    height: 20px;
+}
