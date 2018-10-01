@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 640px;
+    width: 650px;
     height: 500px;
     margin: 20px auto;
 }
@@ -74,6 +74,7 @@ body {
 .basket {
     position: absolute;
     height: 20px;
-    width: 40px;
+    width: 50px;
+    left: 225px;
     outline: 1px solid black;
 }
