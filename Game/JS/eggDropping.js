@@ -1,6 +1,6 @@
 //generate egg, assign classes, put into motion at random speed
 function eggDropping() {
-    var eggTime = 10;
+    var eggTime = 20;
     var topOffset = 0;
     //egg creation
     var egg = document.createElement('div');
@@ -15,7 +15,7 @@ function eggDropping() {
     
     //egg movement
     setInterval(function() {
-        var eggVelocity = randomEggSpeed(0.05, 0.15);
+        var eggVelocity = randomEggSpeed(0.1, 0.2);
         if (topOffset >= 0 && topOffset <= 500) {
             topOffset = topOffset + eggVelocity * eggTime;
             console.log(topOffset);
@@ -25,14 +25,14 @@ function eggDropping() {
 }
 eggDropping();
 //random eggDropping call, IIFE
-(function randomEggDropping(maxTimeInterval) {
-    var randomTimeInterval = Math.random() * maxTimeInterval;
-    console.log(randomTimeInterval);
-    setTimeout(function () {
-        eggDropping();
-        randomEggDropping(3000);
-    }, randomTimeInterval);
-}());
+// (function randomEggDropping(maxTimeInterval) {
+//     var randomTimeInterval = Math.random() * maxTimeInterval;
+//     console.log(randomTimeInterval);
+//     setTimeout(function () {
+//         eggDropping();
+//         randomEggDropping(10000);
+//     }, randomTimeInterval);
+// }());
 
 //random picking of egg.style.left value from given range - in our case 6-494px
 function randomEggPosition(min, max) {

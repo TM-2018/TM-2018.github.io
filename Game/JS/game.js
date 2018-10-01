@@ -39,6 +39,7 @@ setInterval(function () {
     } else {
         velocity = 0;
     }
+    eggCatching(basket);
 }, basketTime)
 
 
