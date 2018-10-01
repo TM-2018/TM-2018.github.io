@@ -29,7 +29,6 @@ function eggDropping() {
 //random eggDropping call, IIFE
 (function randomEggDropping(maxTimeInterval) {
     var randomTimeInterval = Math.random() * maxTimeInterval;
-    console.log(randomTimeInterval);
     setTimeout(function () {
         eggDropping();
         randomEggDropping(eggInterval);

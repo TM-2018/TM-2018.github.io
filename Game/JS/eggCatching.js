@@ -27,7 +27,7 @@ function eggActions(currentEgg) {
             if (currentEgg.classList.contains('redEgg')) {
                 caughtEggsCounter += 5;
             } else {
-                superEggFeatures(0.05, 0.05, 0.9)
+                superEggFeatures(0.05, 0.05, 0.05)
                 caughtEggsCounter += 10;
             }
         }
@@ -44,8 +44,7 @@ function superEggFeatures(a, b, c) {
     } else if (number >= (a + b) && number < (a + b + c)) {
         moreEggs();
     } else {
-        //lost egg reincarnation
-
+        eggReincarnation();
     }
 }
 
@@ -71,6 +70,14 @@ function moreEggs() {
     document.querySelector('.superEggContainer').innerText = 'MORE EGGS!';
     setTimeout(function() {
         eggInterval = 5000;
+        document.querySelector('.superEggContainer').innerText = '?';
+    }, superEggFeatureTime)
+}
+function eggReincarnation() {
+    lostEggsCounter -= 1;
+    document.querySelector('.superEggContainer').innerText = 'EGG RESURRECTS!';
+    document.querySelector('.lostEggsValue').innerText = lostEggsCounter;
+    setTimeout(function() {
         document.querySelector('.superEggContainer').innerText = '?';
     }, superEggFeatureTime)
 }
