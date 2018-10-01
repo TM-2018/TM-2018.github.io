@@ -41,6 +41,17 @@ body {
 .timerContainer {
     margin-top: 10px;
 }
+.superEggContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 80px;
+    margin: 5px auto;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    outline: 1px solid black;
+}
 .boardContainer {
     display: flex;
     flex-direction: column;

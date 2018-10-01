@@ -52,14 +52,18 @@ function superEggFeatures(a, b, c) {
 
 function wideningBasket() {
     basket.classList.add('wideBasket');
+    document.querySelector('.superEggContainer').innerText = 'BIG BASKET!';
     setTimeout(function() {
         basket.classList.remove('wideBasket');
+        document.querySelector('.superEggContainer').innerText = '?';
     }, superEggFeatureTime)
 }
 
 function acceleratingBasket() {
     basketVelocity = 0.2;
+    document.querySelector('.superEggContainer').innerText = 'EXTRA SPEED!';
     setTimeout(function() {
         basketVelocity = 0.1;
+        document.querySelector('.superEggContainer').innerText = '?';
     }, superEggFeatureTime)
 }
