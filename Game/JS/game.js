@@ -40,6 +40,7 @@ setInterval(function () {
         velocity = 0;
     }
     eggCatching(basket);
+    eggLosing();
 }, basketTime)
 
 
