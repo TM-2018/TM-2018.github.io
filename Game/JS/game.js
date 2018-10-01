@@ -3,7 +3,7 @@ var isLeftArrowPressed = false;
 var isRightArrowPressed = false;
 var leftOffset = 225;
 var basketTime = 10;
-var basketVelocity = 0;
+var basketVelocity = 0.1;
 
 window.addEventListener('keydown', function (event) {
     if (event.code === 'ArrowLeft') {
@@ -28,12 +28,13 @@ window.addEventListener('keyup', function () {
 
 setInterval(function () {
     if (isLeftArrowPressed && leftOffset >= 1) {
-        basketVelocity = 0.1;
+        velocity = basketVelocity;
         leftOffset = leftOffset - basketVelocity * basketTime;
         basket.style.left = leftOffset + 'px'
     }
+    //right move includes limiting condition for wider basket - limitation from the right
     if (isRightArrowPressed && leftOffset <= 449 && (leftOffset + basket.getBoundingClientRect().width) < 500) {
-        basketVelocity = 0.1;
+        velocity = basketVelocity;
         leftOffset = leftOffset + basketVelocity * basketTime;
         basket.style.left = leftOffset + 'px'
     } else {

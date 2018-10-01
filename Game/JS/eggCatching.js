@@ -1,4 +1,5 @@
 var caughtEggsCounter = 0;
+var superEggFeatureTime = 10000;
 
 function eggCatching(desk) {
     var deskYCenter = desk.getBoundingClientRect().bottom + desk.getBoundingClientRect().height / 2;
@@ -26,7 +27,7 @@ function eggActions(currentEgg) {
             if (currentEgg.classList.contains('redEgg')) {
                 caughtEggsCounter += 5;
             } else {
-                superEggFeatures(0.9, 0.05, 0.05)
+                superEggFeatures(0.05, 0.9, 0.05)
                 caughtEggsCounter += 10;
             }
         }
@@ -37,10 +38,9 @@ function superEggFeatures(a, b, c) {
     var number = Math.random();
     
     if (number < a) {
-        wideningBasket(basket);
+        wideningBasket();
     } else if (number >= a && number < (a + b)) {
-        //accelerating basket
-
+        acceleratingBasket();
     } else if (number >= (a + b) && number < (a + b + c)) {
         //slowing eggs
 
@@ -50,9 +50,16 @@ function superEggFeatures(a, b, c) {
     }
 }
 
-function wideningBasket(basket) {
+function wideningBasket() {
     basket.classList.add('wideBasket');
     setTimeout(function() {
         basket.classList.remove('wideBasket');
-    }, 10000)
+    }, superEggFeatureTime)
+}
+
+function acceleratingBasket() {
+    basketVelocity = 0.2;
+    setTimeout(function() {
+        basketVelocity = 0.1;
+    }, superEggFeatureTime)
 }
