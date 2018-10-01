@@ -1,3 +1,4 @@
+var eggInterval = 5000;
 //generate egg, assign classes, put into motion at random speed
 function eggDropping() {
     var eggTime = 20;
@@ -28,9 +29,10 @@ function eggDropping() {
 //random eggDropping call, IIFE
 (function randomEggDropping(maxTimeInterval) {
     var randomTimeInterval = Math.random() * maxTimeInterval;
+    console.log(randomTimeInterval);
     setTimeout(function () {
         eggDropping();
-        randomEggDropping(5000);
+        randomEggDropping(eggInterval);
     }, randomTimeInterval);
 }());
 

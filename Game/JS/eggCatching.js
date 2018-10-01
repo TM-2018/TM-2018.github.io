@@ -27,7 +27,7 @@ function eggActions(currentEgg) {
             if (currentEgg.classList.contains('redEgg')) {
                 caughtEggsCounter += 5;
             } else {
-                superEggFeatures(0.05, 0.9, 0.05)
+                superEggFeatures(0.05, 0.05, 0.9)
                 caughtEggsCounter += 10;
             }
         }
@@ -42,8 +42,7 @@ function superEggFeatures(a, b, c) {
     } else if (number >= a && number < (a + b)) {
         acceleratingBasket();
     } else if (number >= (a + b) && number < (a + b + c)) {
-        //slowing eggs
-
+        moreEggs();
     } else {
         //lost egg reincarnation
 
@@ -64,6 +63,14 @@ function acceleratingBasket() {
     document.querySelector('.superEggContainer').innerText = 'EXTRA SPEED!';
     setTimeout(function() {
         basketVelocity = 0.1;
+        document.querySelector('.superEggContainer').innerText = '?';
+    }, superEggFeatureTime)
+}
+function moreEggs() {
+    eggInterval = 2500;
+    document.querySelector('.superEggContainer').innerText = 'MORE EGGS!';
+    setTimeout(function() {
+        eggInterval = 5000;
         document.querySelector('.superEggContainer').innerText = '?';
     }, superEggFeatureTime)
 }
