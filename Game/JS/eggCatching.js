@@ -25,8 +25,31 @@ function eggActions(currentEgg) {
             if (currentEgg.classList.contains('redEgg')) {
                 caughtEggsCounter += 5;
             } else {
+                superEggFeatures(0.9,0.05,0.05)
+                
                 caughtEggsCounter += 10;
             }
         }
     }
+}
+
+function superEggFeatures(a, b, c) {
+    var number = Math.random();
+        if (number < a) {
+            //widening basket
+            wideningBasket(basket);
+        } else if (number >= a && number < (a + b)) {
+            //accelerating basket
+            
+        } else if (number >= (a + b) && number < (a + b + c)) {
+            //slowing eggs
+            
+        } else {
+            //lost egg reincarnation
+            
+        }
+    }
+
+function wideningBasket(basket) {
+    basket.style.width = 100 + 'px';
 }
