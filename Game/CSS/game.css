@@ -49,6 +49,7 @@ body {
     outline: 1px solid black;
 }
 .eggsContainer {
+    position: relative;
     height:20px;
 }
 .playField {
@@ -56,17 +57,23 @@ body {
     flex-grow: 1;
 }
 .egg {
-
+position: absolute;
+width: 10px;
+height: 20px;
 }
 .yellowEgg {
-
+background: yellow;
 }
 .greenEgg {
-
+background: green;
 }
 .redEgg {
-
+background: red;
 }
+.superEgg {
+    background: silver;
+}
+
 .basketContainer {
     position: relative;
     height: 20px;
