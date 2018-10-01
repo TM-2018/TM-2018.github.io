@@ -16,23 +16,23 @@ function eggDropping() {
     //egg movement
     setInterval(function() {
         var eggVelocity = randomEggSpeed(0.1, 0.2);
-        if (topOffset >= 0 && topOffset <= 500) {
+        if (topOffset >= 0 && topOffset < 500) {
             topOffset = topOffset + eggVelocity * eggTime;
-            console.log(topOffset);
             egg.style.top = topOffset + 'px';
+        } else {
+            egg.remove();
         }
     }, eggTime)
 }
-eggDropping();
+
 //random eggDropping call, IIFE
-// (function randomEggDropping(maxTimeInterval) {
-//     var randomTimeInterval = Math.random() * maxTimeInterval;
-//     console.log(randomTimeInterval);
-//     setTimeout(function () {
-//         eggDropping();
-//         randomEggDropping(10000);
-//     }, randomTimeInterval);
-// }());
+(function randomEggDropping(maxTimeInterval) {
+    var randomTimeInterval = Math.random() * maxTimeInterval;
+    setTimeout(function () {
+        eggDropping();
+        randomEggDropping(5000);
+    }, randomTimeInterval);
+}());
 
 //random picking of egg.style.left value from given range - in our case 6-494px
 function randomEggPosition(min, max) {

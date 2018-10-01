@@ -29,13 +29,14 @@ body {
 .timerText, .timerValue, .scoreText, .scoreValue, .lostEggsText, .lostEggsValue {
     width: 120px;
     height: 40px;
-}
-.timerText, .scoreText, .lostEggsText {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+}
+.timerValue, .scoreValue, .lostEggsValue {
+    font-size: 30px;
 }
 .timerContainer {
     margin-top: 10px;
