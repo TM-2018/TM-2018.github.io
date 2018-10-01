@@ -38,9 +38,17 @@ function randomEggSpeed(min, max) {
     return Math.random() * (max - min);
 }
 
-
-// //four types with different probabilities
-// function randomEggColor() {
-
-// }
+// four types of eggs with different probabilities yellow(1pts,60%,12/20), green(2pts,25%,5/20), red(5pts,10%,2/20), super(extra feature,5%,1/20)
+function randomEggColor(a, b, c) {
+    var number = Math.random();
+    if (number < a) {
+        return 'yellow'
+    } else if (number >= a && number < (a + b)) {
+        return 'green'
+    } else if (number >= (a + b) && number < (a + b + c)) {
+        return 'red'
+    } else {
+        return 'super'
+    }
+}
 
