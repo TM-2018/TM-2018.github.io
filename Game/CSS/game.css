@@ -60,6 +60,7 @@ body {
 position: absolute;
 width: 10px;
 height: 20px;
+background: black;
 }
 .yellowEgg {
 background: yellow;

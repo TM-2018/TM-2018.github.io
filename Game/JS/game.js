@@ -39,7 +39,6 @@ setInterval(function () {
     } else {
         velocity = 0;
     }
-    console.log(basket.style.left);
 }, basketTime)
 
 
