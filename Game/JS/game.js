@@ -32,7 +32,7 @@ setInterval(function () {
         leftOffset = leftOffset - basketVelocity * basketTime;
         basket.style.left = leftOffset + 'px'
     }
-    if (isRightArrowPressed && leftOffset <= 449) {
+    if (isRightArrowPressed && leftOffset <= 449 && (leftOffset + basket.getBoundingClientRect().width) < 500) {
         basketVelocity = 0.1;
         leftOffset = leftOffset + basketVelocity * basketTime;
         basket.style.left = leftOffset + 'px'

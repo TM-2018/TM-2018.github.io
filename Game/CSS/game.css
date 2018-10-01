@@ -78,12 +78,17 @@ background: red;
 
 .basketContainer {
     position: relative;
-    height: 20px;
+    height: 25px;
+    overflow: hidden;
 }
 .basket {
     position: absolute;
     height: 20px;
     width: 50px;
+    top: 5px;
     left: 225px;
     outline: 1px solid black;
+}
+.wideBasket {
+    width: 100px;
 }
