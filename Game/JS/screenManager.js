@@ -1,3 +1,5 @@
+var letsPlayLock = false;
+
 //start game
 function startGame() {
     popUp(
@@ -13,16 +15,18 @@ var pauseCounter = 0;
 
 function pauseOn() {
     popUp(
-        "pause", 
+        "pause",
         "Paused. Press Space to resume game.",
         "Restart"
     );
+    letsPlayLock = true;
 }
 
 function pauseOff() {
     document.querySelectorAll('.popup').forEach(function (node) {
         node.remove();
     });
+    letsPlayLock = false;
 }
 
 function pause() {
@@ -31,7 +35,7 @@ function pause() {
             case "Space":
                 if (pauseCounter % 2 === 0) {
                     pauseOn();
-                    pauseCounter +=1;
+                    pauseCounter += 1;
                 } else {
                     pauseOff();
                     pauseCounter = 0;
@@ -79,9 +83,19 @@ function popUp(textClass, textValue, button1Text) {
     button1.innerHTML = button1Text;
     popUpWindow.appendChild(button1);
     button1.addEventListener('click', function () {
-        letsPlay();
+        if (button1Text === "Play") {
+            letsPlay();
+        }
+        if (button1Text === "Restart") {
+                letsPlayLock = false;
+                letsPlay();
+        } 
+        else {
+            letsPlayLock = false;
+            letsPlay();
+        }
         document.querySelectorAll('.popup').forEach(function (node) {
-            node.remove();
+        node.remove();
         });
     });
 

@@ -32,6 +32,7 @@ function eggDropping() {
 function randomEggDropping(maxTimeInterval) {
     var randomTimeInterval = Math.random() * maxTimeInterval;
     setTimeout(function () {
+        if (letsPlayLock) {return;}
         eggDropping();
         randomEggDropping(eggInterval);
     }, randomTimeInterval);

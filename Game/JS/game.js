@@ -3,6 +3,10 @@ var basketVelocity = 0.1;
 
 function letsPlay() {
 
+    // if (letsPlayLock) {
+    //     return;
+    // }
+    
     randomEggDropping();
 
     // var basket = document.querySelector('.basket');

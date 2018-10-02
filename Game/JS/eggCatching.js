@@ -2,6 +2,7 @@ var caughtEggsCounter = 0;
 var superEggFeatureTime = 10000;
 
 function eggCatching(desk) {
+    if (letsPlayLock) {return;}
     var deskYCenter = desk.getBoundingClientRect().bottom + desk.getBoundingClientRect().height / 2;
     var deskXCenter = desk.getBoundingClientRect().x + desk.getBoundingClientRect().width / 2;
     var eggsOnBoard = document.querySelectorAll('.egg');
