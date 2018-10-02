@@ -1,4 +1,4 @@
-var eggInterval = 6000;
+var eggInterval = 8000;
 //generate egg, assign classes, put into motion at random speed
 function eggDropping() {
     if (letsPlayLock) {return;};
@@ -15,7 +15,7 @@ function eggDropping() {
     //egg type picking
     randomEggOneOfFour(0.5, 0.25, 0.15, egg);
     // random egg speed
-    var eggVelocity = randomEggSpeed(0.02, 0.08);
+    var eggVelocity = randomEggSpeed(0.02, 0.1);
 
     //egg movement
     setInterval(function () {

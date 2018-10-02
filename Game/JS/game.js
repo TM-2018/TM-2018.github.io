@@ -1,5 +1,5 @@
 var basket = document.querySelector('.basket');
-var basketVelocity = 0.1;
+var basketVelocity = 0.12;
 
 function letsPlay() {
 

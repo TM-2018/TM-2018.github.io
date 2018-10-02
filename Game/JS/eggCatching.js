@@ -62,18 +62,18 @@ function wideningBasket() {
 }
 
 function acceleratingBasket() {
-    basketVelocity = 0.2;
+    basketVelocity = 0.24;
     document.querySelector('.superEggContainer').innerText = 'EXTRA SPEED!';
     setTimeout(function() {
-        basketVelocity = 0.1;
+        basketVelocity = 0.12;
         document.querySelector('.superEggContainer').innerText = '?';
     }, superEggFeatureTime)
 }
 function moreEggs() {
-    eggInterval = 2500;
+    eggInterval = 4000;
     document.querySelector('.superEggContainer').innerText = 'MORE EGGS!';
     setTimeout(function() {
-        eggInterval = 5000;
+        eggInterval = 8000;
         document.querySelector('.superEggContainer').innerText = '?';
     }, superEggFeatureTime)
 }
