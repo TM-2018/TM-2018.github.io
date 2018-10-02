@@ -1,13 +1,16 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-.gameContainer {
+.gameContainer, .endScreen {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 650px;
     height: 500px;
     margin: 20px auto;
+}
+.endScreen {
+    background: darkgrey;    
 }
 .infoPanel{
     display: flex;
