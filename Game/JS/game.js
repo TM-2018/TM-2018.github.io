@@ -3,10 +3,12 @@ var basketVelocity = 0.1;
 
 function letsPlay() {
 
-    // if (letsPlayLock) {
-    //     return;
-    // }
+    if (letsPlayLock) {
+        return;
+    }
     
+    console.log('letsPlay');
+
     randomEggDropping();
 
     // var basket = document.querySelector('.basket');
@@ -38,6 +40,7 @@ function letsPlay() {
     })
 
     setInterval(function () {
+        // if (letsPlayLock) {return;}
         if (isLeftArrowPressed && leftOffset >= 1) {
             velocity = basketVelocity;
             leftOffset = leftOffset - basketVelocity * basketTime;
