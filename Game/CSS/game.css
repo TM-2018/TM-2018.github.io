@@ -113,11 +113,12 @@ background: blue;
     font-family: Arial;
     text-align: center;
     font-weight: bolder;
-    color: green;
+    color: white;
 }
 .popup {
     position: absolute;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 650px;
@@ -130,9 +131,16 @@ button {
     margin-top: 20px;
     line-height: 60px;
     font-weight: bold;
-    padding: 0 40px;
+    width: 120px;
+    /* padding: 0 40px; */
     background: salmon;
     border: none;
+    cursor: pointer;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    color: black;
   }
   button:hover {
     background: lightsalmon;

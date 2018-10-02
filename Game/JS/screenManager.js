@@ -14,15 +14,15 @@ function popUp(textClass, textValue, button1Text) {
     });
     // popup window
     var body = document.querySelector('body');
-    var popupWindow = document.createElement('div');
-    popupWindow.classList.add('popup');
-    body.appendChild(popupWindow);
+    var popUpWindow = document.createElement('div');
+    popUpWindow.classList.add('popup');
+    body.appendChild(popUpWindow);
 
     //text for popup
     var message = document.createElement('p');
     message.classList.add(textClass);
     message.innerHTML = textValue;
-    popupWindow.appendChild(message);
+    popUpWindow.appendChild(message);
 
     // button nr 1 - Play/Restart/PlayAgain:
     var button1 = document.createElement('button');
@@ -37,8 +37,9 @@ function popUp(textClass, textValue, button1Text) {
         
     // button nr 2 - Home:
     var button2 = document.createElement('button');
-    button2.innerHTML = 'Home';
+    // button2.innerHTML = 'Home';
     var linkToHome = document.createElement('a');
+    linkToHome.innerText = 'Home';
     linkToHome.href = "https://tomasz-milaszewski.github.io/";
     button2.appendChild(linkToHome);
     popUpWindow.appendChild(button2);
