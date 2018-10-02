@@ -108,12 +108,22 @@ background: blue;
 }
 
 /* START & PAUSE & END SCREENS*/
-.start {
-    font-size: 20px;
+.start, .pause, .end {
     font-family: Arial;
     text-align: center;
     font-weight: bolder;
+}
+.start {
+    font-size: 20px;
     color: white;
+}
+.pause {
+    font-size: 30px;
+    color: lightblue;
+}
+.end {
+    font-size: 30px;
+    color: red;
 }
 .popup {
     position: absolute;

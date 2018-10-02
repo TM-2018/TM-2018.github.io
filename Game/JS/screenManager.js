@@ -1,3 +1,4 @@
+//start game
 function startGame() {
     popUp(
         "start",
@@ -7,6 +8,41 @@ function startGame() {
 }
 startGame();
 
+//pause
+function pauseOn() {
+    popUp(
+        "pause", 
+        "Paused. Press Space to resume game.",
+        "Restart"
+    );
+}
+
+function pauseOff() {
+    document.querySelectorAll('.popup').forEach(function (node) {
+        node.remove();
+    });
+}
+
+var pauseCounter = 0;
+
+function pause() {
+    window.addEventListener('keydown', function (event) {
+        switch (event.code) {
+            case "Space":
+                if (pauseCounter % 2 === 0) {
+                    pauseOn();
+                    pauseCounter +=1;
+                } else {
+                    pauseOff();
+                    pauseCounter = 0;
+                }
+                break;
+        };
+    });
+};
+pause();
+
+//popup window for start/pause/end screens
 function popUp(textClass, textValue, button1Text) {
     // checks if window is not already open
     document.querySelectorAll('.popup').forEach(function (node) {
@@ -34,15 +70,13 @@ function popUp(textClass, textValue, button1Text) {
             node.remove();
         });
     });
-        
+
     // button nr 2 - Home:
     var button2 = document.createElement('button');
-    // button2.innerHTML = 'Home';
     var linkToHome = document.createElement('a');
     linkToHome.innerText = 'Home';
     linkToHome.href = "https://tomasz-milaszewski.github.io/";
     button2.appendChild(linkToHome);
     popUpWindow.appendChild(button2);
-    // return message;
 }
 

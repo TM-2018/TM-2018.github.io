@@ -1,7 +1,7 @@
 var eggInterval = 4000;
 //generate egg, assign classes, put into motion at random speed
 function eggDropping() {
-    var eggTime = 20;
+    var eggTime = 10;
     var topOffset = 0;
     //egg creation
     var egg = document.createElement('div');
@@ -12,7 +12,7 @@ function eggDropping() {
     egg.style.left = randomEggPosition(1, 490) + 'px';
     egg.style.top = 50 + 'px';
     //egg type picking
-    randomEggOneOfFour(0.05, 0.05, 0.05, egg);
+    randomEggOneOfFour(0.5, 0.25, 0.15, egg);
     // random egg speed
     var eggVelocity = randomEggSpeed(0.02, 0.1);
     

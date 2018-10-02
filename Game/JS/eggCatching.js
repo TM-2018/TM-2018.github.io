@@ -27,7 +27,7 @@ function eggActions(currentEgg) {
             if (currentEgg.classList.contains('redEgg')) {
                 caughtEggsCounter += 5;
             } else {
-                superEggFeatures(0.05, 0.05, 0.05)
+                superEggFeatures(0.25, 0.25, 0.25)
                 caughtEggsCounter += 10;
             }
         }
