@@ -4,7 +4,7 @@ var letsPlayLock = false;
 function startGame() {
     popUp(
         "start",
-        "Welcome to Catch the Eggs game!<br><br>Moving basket: LeftKey & RightKey<br><br>To pause press Space<br><br>Don't lose more than 5 eggs!<br><br>Watch out for super eggs!<br>",
+        "Welcome to The Egg Catcha!<br><br>Moving basket: LeftKey & RightKey<br><br>To pause press Space<br><br>Don't lose more than 5 eggs!<br><br>Watch out for super eggs!<br>",
         "Play"
     );
 }
@@ -50,9 +50,11 @@ pause();
 function gameOver() {
     popUp(
         "end",
-        "You lost! Your score: ",
+        "Scrambled eggs! Your score: ",
         "Play again"
     );
+    var gameoverPopup = document.querySelector('.popup');
+    gameoverPopup.style.background = 'url(Graphics/scrambled-eggs.png)';
     var scoreValue = document.createElement('span');
     scoreValue.classList.add('end');
     scoreValue.innerText = caughtEggsCounter;
