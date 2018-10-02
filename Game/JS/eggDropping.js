@@ -9,7 +9,7 @@ function eggDropping() {
     var eggsContainer = document.querySelector('.eggsContainer');
     eggsContainer.appendChild(egg);
     //egg positioning
-    egg.style.left = randomEggPosition(6, 494) + 'px';
+    egg.style.left = randomEggPosition(1, 490) + 'px';
     egg.style.top = 50 + 'px';
     //egg type picking
     randomEggOneOfFour(0.05, 0.05, 0.05, egg);
@@ -35,7 +35,7 @@ function eggDropping() {
     }, randomTimeInterval);
 }());
 
-//random picking of egg.style.left value from given range - in our case 6-494px
+//random picking of egg.style.left value from given range - in our case 1-490px
 function randomEggPosition(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }

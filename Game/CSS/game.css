@@ -43,7 +43,7 @@ body {
 }
 .superEggContainer{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 120px;
     height: 80px;
@@ -51,6 +51,7 @@ body {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     outline: 1px solid black;
+    text-align: center;
 }
 .boardContainer {
     display: flex;
