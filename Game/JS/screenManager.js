@@ -59,8 +59,8 @@ function gameOver() {
     var message = document.querySelector('.end');
     message.appendChild(scoreValue);
     document.querySelectorAll('.egg').forEach(function (node) {
-            node.remove();
-        });
+        node.remove();
+    });
 }
 
 //popup window for start/pause/end screens
@@ -89,14 +89,14 @@ function popUp(textClass, textValue, button1Text) {
         if (button1Text === "Play") {
             letsPlay();
         } else if (button1Text === "Restart") {
-                letsPlayLock = false;
-                window.location.reload();
+            letsPlayLock = false;
+            window.location.reload();
         } else {
             letsPlayLock = false;
             window.location.reload();
         }
         document.querySelectorAll('.popup').forEach(function (node) {
-        node.remove();
+            node.remove();
         });
     });
 

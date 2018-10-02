@@ -3,21 +3,15 @@ var basketVelocity = 0.1;
 
 function letsPlay() {
 
-    if (letsPlayLock) {
-        return;
-    }
+    if (letsPlayLock) {return;}
     
-    console.log('letsPlay');
-
     randomEggDropping();
 
-    // var basket = document.querySelector('.basket');
     var isLeftArrowPressed = false;
     var isRightArrowPressed = false;
     var leftOffset = 225;
     var basketTime = 10;
-    // var basketVelocity = 0.1;
-
+    
     window.addEventListener('keydown', function (event) {
         if (event.code === 'ArrowLeft') {
             isLeftArrowPressed = true;
@@ -40,7 +34,7 @@ function letsPlay() {
     })
 
     setInterval(function () {
-        // if (letsPlayLock) {return;}
+        if (letsPlayLock) {return;}
         if (isLeftArrowPressed && leftOffset >= 1) {
             velocity = basketVelocity;
             leftOffset = leftOffset - basketVelocity * basketTime;

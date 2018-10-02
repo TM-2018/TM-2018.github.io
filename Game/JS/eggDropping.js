@@ -15,13 +15,17 @@ function eggDropping() {
     //egg type picking
     randomEggOneOfFour(0.5, 0.25, 0.15, egg);
     // random egg speed
-    var eggVelocity = randomEggSpeed(0.02, 0.1);
+    var eggVelocity = randomEggSpeed(0.02, 0.08);
 
     //egg movement
     setInterval(function () {
-        if (letsPlayLock) {eggVelocity = 0};
+        if (letsPlayLock) {
+            velocity = 0;}
+            else {
+                velocity = eggVelocity;
+            }
         if (topOffset >= 0 && topOffset < 500) {
-            topOffset = topOffset + eggVelocity * eggTime;
+            topOffset = topOffset + velocity * eggTime;
             egg.style.top = topOffset + 'px';
         } else {
             egg.remove();
