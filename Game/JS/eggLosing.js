@@ -7,15 +7,6 @@ function eggLosing() {
             eggsOnBoard[i].remove();
             lostEggsCounter += 1;
             document.querySelector('.lostEggsValue').innerText = lostEggsCounter;
-            gameOver(1);
         }
-    }
-}
-function gameOver(lostEggs) {
-    if (lostEggsCounter >= lostEggs) {
-        var endScreen = document.createElement('div');
-        endScreen.classList.add('endScreen');
-        var body = document.querySelector('body');
-        body.appendChild(endScreen);
     }
 }

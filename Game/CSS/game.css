@@ -1,16 +1,15 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-.gameContainer, .endScreen {
+
+/* GAME BOARD & INFO PANEL*/
+.gameContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 650px;
     height: 500px;
     margin: 20px auto;
-}
-.endScreen {
-    background: darkgrey;    
 }
 .infoPanel{
     display: flex;
@@ -28,7 +27,6 @@ body {
     margin: 5px auto;
     outline: 1px solid black;
 }
-
 .timerText, .timerValue, .scoreText, .scoreValue, .lostEggsText, .lostEggsValue {
     width: 120px;
     height: 40px;
@@ -72,6 +70,8 @@ body {
     height: 100px;
     flex-grow: 1;
 }
+
+/* EGGS & BASKET*/
 .egg {
 position: absolute;
 width: 10px;
@@ -88,9 +88,8 @@ background: green;
 background: red;
 }
 .superEgg {
-    background: blue;
+background: blue;
 }
-
 .basketContainer {
     position: relative;
     height: 25px;
@@ -107,3 +106,34 @@ background: red;
 .wideBasket {
     width: 100px;
 }
+
+/* START & PAUSE & END SCREENS*/
+.start {
+    font-size: 20px;
+    font-family: Arial;
+    text-align: center;
+    font-weight: bolder;
+    color: green;
+}
+.popup {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    height: 500px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.85);
+    left: 0; top: 0; right: 0; bottom: 0;
+}
+button {
+    margin-top: 20px;
+    line-height: 60px;
+    font-weight: bold;
+    padding: 0 40px;
+    background: salmon;
+    border: none;
+  }
+  button:hover {
+    background: lightsalmon;
+  }
