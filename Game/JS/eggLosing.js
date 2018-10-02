@@ -7,6 +7,10 @@ function eggLosing() {
             eggsOnBoard[i].remove();
             lostEggsCounter += 1;
             document.querySelector('.lostEggsValue').innerText = lostEggsCounter;
+            
+            if (lostEggsCounter >= 5) {
+                gameOver();
+            }
         }
     }
 }

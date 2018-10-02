@@ -2,13 +2,15 @@
 function startGame() {
     popUp(
         "start",
-        "Welcome to Catch the Eggs game!<br><br>Moving basket: LeftKey & RightKey<br><br>To pause press Space<br><br>Don't lose more than 3 eggs!<br><br>Watch out for super eggs!<br>",
+        "Welcome to Catch the Eggs game!<br><br>Moving basket: LeftKey & RightKey<br><br>To pause press Space<br><br>Don't lose more than 5 eggs!<br><br>Watch out for super eggs!<br>",
         "Play"
     );
 }
 startGame();
 
 //pause
+var pauseCounter = 0;
+
 function pauseOn() {
     popUp(
         "pause", 
@@ -22,8 +24,6 @@ function pauseOff() {
         node.remove();
     });
 }
-
-var pauseCounter = 0;
 
 function pause() {
     window.addEventListener('keydown', function (event) {
@@ -41,6 +41,15 @@ function pause() {
     });
 };
 pause();
+
+//gameover
+function gameOver() {
+    popUp(
+        "end",
+        "You lost!",
+        "Play again"
+    );
+}
 
 //popup window for start/pause/end screens
 function popUp(textClass, textValue, button1Text) {
