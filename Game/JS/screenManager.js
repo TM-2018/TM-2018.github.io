@@ -1,44 +1,47 @@
 function startGame() {
-    var message = popUp(
-        'start',
-        'Welcome in ClimbApp game!<br><br>To move use: LeftKey, RightKey, UpKey, DownKey.<br><br>To pause game press Space.<br><br>Trust in bananas to get Turbo Speed!<br>'
+    popUp(
+        "start",
+        "Welcome to Catch the Eggs game!<br><br>Moving basket: LeftKey & RightKey<br><br>To pause press Space<br><br>Don't lose more than 3 eggs!<br><br>Watch out for super eggs!<br>",
+        "Play"
     );
-
-    
 }
 startGame();
 
-function popUp(textClass, textValue, button1, button2) {
-    // sprawdzamy czy okienko już się nie wyświetla i jak się wyświetla to je usuwamy
-    // zanim wyświetlimy następne (zabezpieczenie przed utworzeniem dwóch okienek):
+function popUp(textClass, textValue, button1Text) {
+    // checks if window is not already open
     document.querySelectorAll('.popup').forEach(function (node) {
         node.remove();
     });
-    // tworzymy wyskakujące okienko, nadajemy klasę i przypinamy do body:
+    // popup window
     var body = document.querySelector('body');
     var popupWindow = document.createElement('div');
     popupWindow.classList.add('popup');
     body.appendChild(popupWindow);
 
-    //tworzymy w tym okienku część tekstową, wstawiamy treść i nadajemy klasę
+    //text for popup
     var message = document.createElement('p');
     message.classList.add(textClass);
     message.innerHTML = textValue;
     popupWindow.appendChild(message);
-        
-    // tworzymy i osadzamy przycisk:
-    var button1 = document.createElement('button');
-    button1.innerHTML = 'Play';
-    popUpWindow.appendChild(button1);
 
-    // dodajemy event:
+    // button nr 1 - Play/Restart/PlayAgain:
+    var button1 = document.createElement('button');
+    button1.innerHTML = button1Text;
+    popUpWindow.appendChild(button1);
     button1.addEventListener('click', function () {
         letsPlay();
         document.querySelectorAll('.popup').forEach(function (node) {
             node.remove();
         });
-        timerId = timeCounter(timerId);
     });
-
-    return message;
+        
+    // button nr 2 - Home:
+    var button2 = document.createElement('button');
+    button2.innerHTML = 'Home';
+    var linkToHome = document.createElement('a');
+    linkToHome.href = "https://tomasz-milaszewski.github.io/";
+    button2.appendChild(linkToHome);
+    popUpWindow.appendChild(button2);
+    // return message;
 }
+
