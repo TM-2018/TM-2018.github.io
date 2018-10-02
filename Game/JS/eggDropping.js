@@ -1,12 +1,7 @@
 var eggInterval = 5000;
 //generate egg, assign classes, put into motion at random speed
 function eggDropping() {
-    if (letsPlayLock) {
-        // document.querySelectorAll('.egg').forEach(function (node) {
-        //     node.remove();
-        // });
-        return;
-    }
+    if (letsPlayLock) {return;};
     var eggTime = 10;
     var topOffset = 0;
     //egg creation

@@ -58,6 +58,9 @@ function gameOver() {
     scoreValue.innerText = caughtEggsCounter;
     var message = document.querySelector('.end');
     message.appendChild(scoreValue);
+    document.querySelectorAll('.egg').forEach(function (node) {
+            node.remove();
+        });
 }
 
 //popup window for start/pause/end screens

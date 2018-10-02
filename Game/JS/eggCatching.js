@@ -6,7 +6,7 @@ function eggCatching(desk) {
     var deskYCenter = desk.getBoundingClientRect().bottom + desk.getBoundingClientRect().height / 2;
     var deskXCenter = desk.getBoundingClientRect().x + desk.getBoundingClientRect().width / 2;
     var eggsOnBoard = document.querySelectorAll('.egg');
-
+    
     for (var i = 0; i < eggsOnBoard.length; i++) {
         var eggYCenter = eggsOnBoard[i].getBoundingClientRect().bottom + eggsOnBoard[i].getBoundingClientRect().height / 2;
         var eggXCenter = eggsOnBoard[i].getBoundingClientRect().x + eggsOnBoard[i].getBoundingClientRect().width / 2;
@@ -14,6 +14,9 @@ function eggCatching(desk) {
             eggsOnBoard[i].remove();
             eggActions(eggsOnBoard[i]);
             document.querySelector('.scoreValue').innerText = caughtEggsCounter;
+        }
+        if (eggsOnBoard[i]) {
+
         }
     }
 }
