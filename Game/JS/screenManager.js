@@ -86,12 +86,11 @@ function popUp(textClass, textValue, button1Text) {
         if (button1Text === "Play") {
             letsPlay();
         } else if (button1Text === "Restart") {
-                // letsPlayLock = false;
-                // letsPlay();
+                letsPlayLock = false;
+                window.location.reload();
         } else {
             letsPlayLock = false;
             window.location.reload();
-            // startGame();
         }
         document.querySelectorAll('.popup').forEach(function (node) {
         node.remove();

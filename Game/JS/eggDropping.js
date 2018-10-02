@@ -2,9 +2,9 @@ var eggInterval = 5000;
 //generate egg, assign classes, put into motion at random speed
 function eggDropping() {
     if (letsPlayLock) {
-        document.querySelectorAll('.egg').forEach(function (node) {
-            node.remove();
-        });
+        // document.querySelectorAll('.egg').forEach(function (node) {
+        //     node.remove();
+        // });
         return;
     }
     var eggTime = 10;
@@ -24,7 +24,7 @@ function eggDropping() {
 
     //egg movement
     setInterval(function () {
-        // var eggVelocity = randomEggSpeed(0.01, 0.2);
+        if (letsPlayLock) {eggVelocity = 0};
         if (topOffset >= 0 && topOffset < 500) {
             topOffset = topOffset + eggVelocity * eggTime;
             egg.style.top = topOffset + 'px';

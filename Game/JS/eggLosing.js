@@ -9,7 +9,7 @@ function eggLosing() {
             lostEggsCounter += 1;
             document.querySelector('.lostEggsValue').innerText = lostEggsCounter;
             
-            if (lostEggsCounter >= 1) {
+            if (lostEggsCounter >= 5) {
                 gameOver();
                 letsPlayLock = true;
             }
