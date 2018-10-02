@@ -1,11 +1,16 @@
+var basket = document.querySelector('.basket');
+var basketVelocity = 0.1;
+
 function letsPlay() {
 
-    var basket = document.querySelector('.basket');
+    randomEggDropping();
+
+    // var basket = document.querySelector('.basket');
     var isLeftArrowPressed = false;
     var isRightArrowPressed = false;
     var leftOffset = 225;
     var basketTime = 10;
-    var basketVelocity = 0.1;
+    // var basketVelocity = 0.1;
 
     window.addEventListener('keydown', function (event) {
         if (event.code === 'ArrowLeft') {
