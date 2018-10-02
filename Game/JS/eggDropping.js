@@ -1,4 +1,4 @@
-var eggInterval = 4000;
+var eggInterval = 5000;
 //generate egg, assign classes, put into motion at random speed
 function eggDropping() {
     var eggTime = 10;

@@ -46,9 +46,14 @@ pause();
 function gameOver() {
     popUp(
         "end",
-        "You lost!",
+        "You lost! Your score: ",
         "Play again"
     );
+    var scoreValue = document.createElement('span');
+    scoreValue.classList.add('end');
+    scoreValue.innerText = caughtEggsCounter;
+    var message = document.querySelector('.end');
+    message.appendChild(scoreValue);
 }
 
 //popup window for start/pause/end screens
