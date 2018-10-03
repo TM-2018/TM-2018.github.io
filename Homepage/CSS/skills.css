@@ -17,14 +17,27 @@
         height: 100%;
         width: 100%;
     }
+    .skill_name {
+        font-family: 'Open Sans', 'Verdana', sans-serif;
+        text-align: center;
+    }
+    .skill_knowledge {
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+        margin: 10px auto;
+    }
+    .skill_knowledge span {
+        font-size: 60px;
+    }
     .skill_dscr {
         height: 80px;
         text-align: center;
-        font-size: 14px;
+        font-size: 12px;
         margin: 10px auto;
         padding-top: 5px;
         padding-bottom: 5px;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Open Sans', 'Verdana', sans-serif;
     }
     .skills-slider-nav {
         display: flex;
