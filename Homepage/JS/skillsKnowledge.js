@@ -1,12 +1,15 @@
 var skills = document.querySelectorAll('.skill_knowledge');
-
-skills.forEach(element => {
+var skillsArray = [4,4,4,3,3,4,4]
+    
+skills.forEach((element, index) => {
     for (var i = 0; i < 5; i ++) {
         var knowledgeBall = document.createElement('span');
-        if (i <= 2) {
-            knowledgeBall.style.color = 'blue';
+        if (i < skillsArray[index]) {
+            knowledgeBall.innerHTML = "&#8226";
+        } else {
+            knowledgeBall.innerHTML = "&#9702";
+            knowledgeBall.style.fontSize = "65px";
         }
-    knowledgeBall.innerHTML = "&#8226";
     element.appendChild(knowledgeBall);
     }
 });

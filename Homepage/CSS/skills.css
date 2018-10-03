@@ -10,7 +10,7 @@
     .skill_photo {
         height: 100px;
         width: 100px;
-        margin: 10px auto;
+        margin: 20px auto;
     }
     .skill_photo img {
         border-radius: 10px;
@@ -20,22 +20,26 @@
     .skill_name {
         font-family: 'Open Sans', 'Verdana', sans-serif;
         text-align: center;
+        font-size: 18px;
+        margin: 10px auto;
     }
     .skill_knowledge {
         display: flex;
         justify-content: space-between;
         width: 100px;
-        margin: 10px auto;
+        margin: 20px auto;
     }
     .skill_knowledge span {
         font-size: 60px;
+        line-height: 30px;
+        color: blue;
     }
     .skill_dscr {
         height: 80px;
         text-align: center;
-        font-size: 12px;
+        font-size: 16px;
+        line-height: 22px;
         margin: 10px auto;
-        padding-top: 5px;
         padding-bottom: 5px;
         font-family: 'Open Sans', 'Verdana', sans-serif;
     }
