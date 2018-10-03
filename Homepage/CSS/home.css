@@ -3,8 +3,17 @@
     display: flex;
     align-items: center;
     align-content: center;
-    flex-direction: column;
-    font-family: 'Lobster', cursive;
-    padding-top: 60px;
-    margin: 0px;
+    font-family: 'Open Sans', 'Verdana', sans-serif;
+    padding: 100px 0px;
+    margin: 0px auto;
+}
+.homeText {
+    flex-grow: 2;
+}
+.homeText p {
+    padding: 5px 0px;
+}
+.homePhoto {
+    flex-grow: 1;
+    height: 300px;
 }
