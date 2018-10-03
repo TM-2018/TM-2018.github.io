@@ -5,22 +5,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tomasz Milaszewski Homepage</title>
-    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <title>Tomasz Milaszewski</title>
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="CSS/header.css">
+    <link rel="stylesheet" type="text/css" href="CSS/home.css">
+    <link rel="stylesheet" type="text/css" href="CSS/about.css">
+    <link rel="stylesheet" type="text/css" href="CSS/skills.css">
+    <link rel="stylesheet" type="text/css" href="CSS/contact.css">
+    <link rel="stylesheet" type="text/css" href="CSS/footer.css">
+    <link rel="icon" href="Icons/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--CSS: font-family: 'Open Sans', 'Verdana', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 </head>
 
 <body>
-    <div class="main">
-        <div class="logo">
-            <img src="Graphics/logo.png" alt=" "/>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#home" class="logo"><img src="Icons/iconmonstr-angel-up-circle-thin-48.png"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- HOME -->
+    <div id="home">
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about">
+    </div>
+
+    <!-- SKILLS -->
+    <div id="skills" class="skills">
+        <div class="skills-slider-nav">
+            <span class="active">&#8226</span>
+            <span>&#8226</span>
+            <span>&#8226</span>
+            <span>&#8226</span>
         </div>
-        <div class="main-sentence">
-            <p>Tomasz Milaszewski &ast; Junior Front-End Developer</p>
-        </div>
-        <div class="dscr">
-            <p>I can help with your projects. Please contact&nbsp;<a>tomasz.milaszewski@gmail.com</a></p>
+        <div class="skills-slider">
+            <div class="skills-prev-button"></div>
+            <div class="skills-items">
+                <!-- HTML5 -->
+                <section class="skills_item">
+                    <div class="skill_photo">
+                        <img src="team-photos/Ania.jpg">
+                    </div>
+                    <div class="skill_dscr">
+                        <p>Junior Front-End Developer & SEO Specialist and Business Analyst. Living in the Cloud and
+                            working
+                            remotely all over the world</p>
+                    </div>
+                </section>
+                <!-- CSS3 -->
+                <section class="skills_item">
+                    <div class="skill_photo">
+                        <img src="team-photos/Emil.jpg">
+                    </div>
+                    <div class="skill_dscr">
+                        <p>Junior Front-End Developer ready to help with your projects.</p>
+                    </div>
+                </section>
+                <!-- JAVASCRIPT -->
+                <section class="skills_item">
+                    <div class="skill_photo">
+                        <img src="team-photos/Jacek.jpg">
+                    </div>
+                    <div class="skill_dscr">
+                        <p>Junior Front-End Developer & Junior SEO specialist based in the Poland, willing to work
+                            Globally
+                            with Startups and Agencies.</p>
+                    </div>
+                </section>
+                <!-- REACT.JS -->
+                <section class="skills_item">
+                    <div class="skill_photo">
+                        <img src="team-photos/Tomek.png">
+                    </div>
+                    <div class="skill_dscr">
+                        <p>Junior Front-End Developer ready to help with your projects.</p>
+                    </div>
+                </section>
+            </div>
+            <div class="skills-next-button"></div>
         </div>
     </div>
+
+    <!-- CONTACT -->
+    <div id="contact">
+        <div class="photo">
+            <div class="cont1">
+                <h1 class="title">Please leave me a message</h1>
+            </div>
+            <form method="POST" action="https://formspree.io/climbapp123@gmail.com">
+                <input class="name" name="name" placeholder="Your name">
+                <input class="email" type="email" name="email" placeholder="Your email">
+                <input class="button" type="submit" value="Get early access!">
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer" class="footer">
+        <div class="foot_nav">
+            <h4>Tomasz Milaszewski © 2018</h4>
+        </div>
+        <div class="foot_right">FOLLOW
+            <div class="foot_social">
+                <a href="https://github.com/TM-2018" target="_blank" class="social_logo"><img src="Icons/GitHub-Mark-32px.png"></a>
+                <a href="https://www.linkedin.com/in/tomasz-miłaszewski/" target="_blank" class="social_logo"><img src="Icons/Logo-2C-28px-TM.png"></a>
+                <a href="" class="foot_ico1"><img src="Icons/github-1-64.png"></a>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/scrollSpy.js"></script>
+    <script src="JS/matchMedia.js"></script>
+    <script src="JS/navMenu.js"></script>
+    <script src="JS/home.js"></script>
 
 </body>
 

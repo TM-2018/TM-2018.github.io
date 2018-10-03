@@ -1,0 +1,126 @@
+  .button {
+        text-align: center;
+        width: 300px;
+        margin-bottom: 15px;
+        margin-top: 5px;
+        font-family: 'Lobster', cursive;
+        border: 1px #e49a22 solid;
+        background-color: #e49a22;
+        text-align: center;
+        line-height: 1.8;
+        padding: 10px 30px;
+        text-decoration: none;
+        border-radius: 15px;
+        font-size: 20px;
+    }
+    input.button:hover {
+        background-color: #e49a22;
+        color:rgb(247, 253, 252);
+    }
+    .name {
+        width: 300px;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .email {
+        width: 300px;
+        font-size: 20px;
+        text-align: center;
+    }
+    cont1 {
+        min-height: 150px;
+    }
+    h1.title {
+        font-family: 'Lobster', cursive;
+        text-align: center;
+        font-size: 40px;
+        color: white;
+        box-shadow: 0 5px 10px rgba(0,0,0,1);
+        padding: 40px;
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }    
+    form {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        min-height: 10vh;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .infomail {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+        font-size: 20px;
+        padding: 10px;
+    }
+    title{
+        text-align: center;
+    }
+    .photo {
+        min-height: 35vh;
+        background: url(https://images.unsplash.com/photo-1524474925134-3e49833a7a08?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70d29e467247907b73e320b4a9183a1f&auto=format&fit=crop&w=500&q=60) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+    }
+    ::-webkit-input-placeholder {
+        text-align: center;
+    }
+    :-moz-placeholder {
+        text-align: center;
+    }
+    @media (min-width: 575.98px) {
+      form {
+        flex-wrap: nowrap;
+        min-height: 6vh;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-top: 60px; 
+        margin-left: 10px;
+        margin-right: 10px;
+      } 
+      .button {
+          margin-top: 0px;
+          margin-bottom: 0px;
+          margin-left: 10px;
+          font-size: 30px;
+      } 
+      .email {
+          margin-top: 0px;
+          margin-left: 10px;
+      }
+      h1.title {
+          font-size: 60px;
+      }
+      .photo {
+        height: 450px;
+      }
+      .name {
+          margin-bottom: 0px;
+      }
+    @media (max-width: 840px) {
+        .email {
+            margin-left: 0px;
+            font-size: 12px;
+        }
+        .name{
+            font-size: 12px;
+            margin-bottom: 0px;
+        }
+        .button {
+            margin-left: 0px;
+        }
+    }
+    }
+    @media (min-width: 1312.98px) {
+        .photo {
+            height: 400px;
+        }
+    }
+    
+  

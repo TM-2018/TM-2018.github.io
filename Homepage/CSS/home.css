@@ -1,0 +1,10 @@
+#home {
+    background-color: rgb(207, 214, 218);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    font-family: 'Lobster', cursive;
+    padding-top: 60px;
+    margin: 0px;
+}
