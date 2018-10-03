@@ -1,5 +1,7 @@
 #home {
-    background: rgb(180, 228, 180);
+    /* background: rgb(180, 228, 180); */
+    background: url(../Graphics/grass_2.png) no-repeat;
+    background-size: 100% 356px;
     display: flex;
     align-items: center;
     align-content: center;
@@ -7,13 +9,14 @@
     font-family: 'Open Sans', 'Verdana', sans-serif;
     padding-top: 56px;
     margin: 0px auto;
-    height: 400px;
+    height: 300px;
 }
 .homeText {
     flex-grow: 2;
 }
 .homeText p {
     padding: 5px 0px;
+    font-weight: bold;
 }
 .imageContainer {
     flex-grow: 1;
@@ -24,5 +27,15 @@
 .pearRight {
     position: absolute;
     right: 0px;
-    /* top: -200px; */
+}
+.pearMiddle {
+    position: absolute;
+    top: 25px;
+    right: -25px;
+}
+.pearLeft {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+
 }
