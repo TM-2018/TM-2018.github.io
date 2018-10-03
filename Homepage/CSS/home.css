@@ -12,14 +12,17 @@
     height: 300px;
 }
 .homeText {
-    flex-grow: 2;
+    flex-grow: 1;
+    margin-left: 20px;
 }
 .homeText p {
-    padding: 5px 0px;
+    padding: 10px 0px;
+    color: white;
+    font-size: 20px;
     font-weight: bold;
 }
 .imageContainer {
-    flex-grow: 1;
+    flex-grow: 2;
     align-self: baseline;
     justify-self: end;
     position: relative;

@@ -1,5 +1,6 @@
 .footer {
-    background: rgb(162, 168, 172);
+    /* background: rgb(162, 168, 172); */
+    background: white;
     border-top: 5px solid black;
     display: flex;
     justify-content: space-between;
@@ -10,8 +11,8 @@
     flex-grow: 6;
 }
 .footerLeftSide h4 {
-    font-size: 1em;
-    color: black;
+    color: rgb(8, 170, 22);
+    font-weight: bold;
     font-family: 'Open Sans', 'Verdana', sans-serif;
 }
 .footerRightSide {
