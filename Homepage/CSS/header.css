@@ -7,6 +7,7 @@
     position: fixed;
     width: 100%;
     z-index: 10000;
+    font-family: 'Open Sans', 'Verdana', sans-serif;
   }
     .header ul {
     margin: 0;
