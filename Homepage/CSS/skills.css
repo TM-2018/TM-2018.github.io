@@ -1,16 +1,16 @@
     .skills_item {
         border-radius: 10px;
         box-shadow: inset 0 0 10px #0000003f, 0 8px 6px -6px black;
-        height: 340px;
-        width: 220px;
-        margin: 5px;
-        padding: 10px;
+        height: 300px;
+        width: 240px;
+        margin: 10px 4px;
+        padding: 10px 4px;
         background-color: rgb(207, 214, 218); 
     }
     .skill_photo {
         height: 100px;
         width: 100px;
-        margin: 20px auto;
+        margin: 10px auto;
     }
     .skill_photo img {
         border-radius: 10px;
@@ -39,7 +39,7 @@
     }
     .skills-slider {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
     }
     .skills-items section {
@@ -53,14 +53,16 @@
         cursor: pointer;
         width: 0; 
         height: 0; 
-        border-top: 15px solid transparent;
-        border-bottom: 15px solid transparent;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
     }
       .skills-next-button {
-        border-left: 15px solid #e49a22;
+        border-left: 20px solid #e49a22;
+        margin-left: 20px;
     }
       .skills-prev-button {
-        border-right:15px solid #e49a22; 
+        border-right:20px solid #e49a22; 
+        margin-right: 20px;
     }
     
     /* 576px */
@@ -72,11 +74,12 @@
     }
     .skills-items {
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        justify-content: center;
+        flex-wrap: wrap;        
     }
     .skills-items section {
         display: block;
+        width: 160px;
     }
     }
     

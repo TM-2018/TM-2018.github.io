@@ -1,5 +1,4 @@
 #home {
-    background-color: rgb(207, 214, 218);
     display: flex;
     align-items: center;
     align-content: center;
@@ -7,13 +6,6 @@
     padding: 100px 0px;
     margin: 0px auto;
 }
-.homeText {
-    flex-grow: 2;
-}
 .homeText p {
     padding: 5px 0px;
-}
-.homePhoto {
-    flex-grow: 1;
-    height: 300px;
 }
