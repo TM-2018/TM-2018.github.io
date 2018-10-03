@@ -1,11 +1,28 @@
 #home {
+    background: rgb(180, 228, 180);
     display: flex;
     align-items: center;
     align-content: center;
+    justify-content: space-between;
     font-family: 'Open Sans', 'Verdana', sans-serif;
-    padding: 100px 0px;
+    padding-top: 56px;
     margin: 0px auto;
+    height: 400px;
+}
+.homeText {
+    flex-grow: 2;
 }
 .homeText p {
     padding: 5px 0px;
+}
+.imageContainer {
+    flex-grow: 1;
+    align-self: baseline;
+    justify-self: end;
+    position: relative;
+}
+.pearRight {
+    position: absolute;
+    right: 0px;
+    /* top: -200px; */
 }
