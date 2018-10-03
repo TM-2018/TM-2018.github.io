@@ -6,22 +6,21 @@
     align-items: center;
     padding: 2vh 2vh;
 }
-.foot_nav {
+.footerLeftSide {
     flex-grow: 6;
 }
-.foot_nav h4 {
+.footerLeftSide h4 {
     font-size: 1em;
     color: black;
     font-family: 'Open Sans', 'Verdana', sans-serif;
-    font-weight: bolder;
 }
-.foot_right {
+.footerRightSide {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
     color: rgba(255, 255, 255, 0.5);
 }
-.social_logo {
+.socialLogo {
     margin-left: 15px;
 }
 
