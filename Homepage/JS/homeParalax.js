@@ -15,9 +15,9 @@ window.addEventListener('scroll', function () {
 window.addEventListener('resize', function(){
     var currentScreenWidth = window.innerWidth;
     if (currentScreenWidth < 992) {
-        var rightOffset = (currentScreenWidth - 992) * 0.4;
+        var rightOffset = (currentScreenWidth - 992) * 0.45;
         var middleOffset = (currentScreenWidth - 992) * 0.85;
-        var leftOffset = (currentScreenWidth - 992) * 0.8;
+        var leftOffset = (currentScreenWidth - 992) * 0.85;
         right.style.right = rightOffset + 'px';//0
         middle.style.right = (-25 + middleOffset) + 'px';//-25
         left.style.right = (150 + leftOffset) + 'px';//150
