@@ -24,78 +24,63 @@
         flex-direction: column;
         justify-content: space-around;
     }
-    
-    
-    
-    .infomail {
+    .name, .email, .message {
         font-family: 'Open Sans', 'Verdana', sans-serif;
-        text-align: center;
-        color: white;
-        font-weight: 700;
-        font-size: 20px;
-        padding: 10px;
-    }
-    
-    .button {
-        text-align: center;
+        border: 1px white solid;
+        background-color: white;
+        border-radius: 3px;
         width: 300px;
-        margin-bottom: 15px;
-        margin-top: 5px;
+        height: 2em;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .message {
+        height: 5em;
+    }
+    .button {
+        width: 70px;
+        height: 2em;
         font-family: 'Open Sans', 'Verdana', sans-serif;
-        border: 1px #e49a22 solid;
-        background-color: #e49a22;
-        text-align: center;
-        line-height: 1.8;
-        padding: 10px 30px;
+        border: 1px white solid;
+        background-color: white;
+        border-radius: 3px;
         text-decoration: none;
-        border-radius: 15px;
-        font-size: 20px;
+        font-size: 14px;
+        padding: 0px;
     }
     input.button:hover {
-        background-color: #e49a22;
-        color:rgb(247, 253, 252);
+        background-color: black;
+        color:white;
     }
-    .name {
-        width: 300px;
-        font-size: 20px;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-    .email {
-        width: 300px;
-        font-size: 20px;
-        text-align: center;
-    }
-    
-        @media (min-width: 575.98px) {
-      form {
-        flex-wrap: nowrap;
-        min-height: 6vh;
-        justify-content: center;
-        margin-bottom: 30px;
-        margin-top: 60px; 
-        margin-left: 10px;
-        margin-right: 10px;
-      } 
-      .button {
-          margin-top: 0px;
-          margin-bottom: 0px;
-          margin-left: 10px;
-          font-size: 30px;
-      } 
-      .email {
-          margin-top: 0px;
-          margin-left: 10px;
-      }
-      h1.title {
-          font-size: 30px;
-      }
-      .photo {
-        height: 400px;
-      }
-      .name {
-          margin-bottom: 0px;
-      }
+    @media (min-width: 575.98px) {
+        form {
+            flex-wrap: nowrap;
+            min-height: 6vh;
+            justify-content: center;
+            margin-bottom: 30px;
+            margin-top: 60px; 
+            margin-left: 10px;
+            margin-right: 10px;
+        } 
+        .button {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 10px;
+            font-size: 30px;
+        } 
+        .email {
+            margin-top: 0px;
+            margin-left: 10px;
+        }
+        h1.title {
+            font-size: 30px;
+        }
+        .photo {
+            height: 400px;
+        }
+        .name {
+            margin-bottom: 0px;
+        }
     @media (max-width: 840px) {
         .email {
             margin-left: 0px;
