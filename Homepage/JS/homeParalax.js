@@ -12,16 +12,21 @@ var left = document.querySelector('.pearLeft');
 //     left.style.right = '+' + (150 + leftOffset) + 'px';//150
 // })
 
-var currentScreenWidth = window.innerWidth;
-
-window.addEventListener('resize', function(event){
-    if (currentScreenWidth < 1200) {
-        var rightOffset = - currentScreenWidth * 0.3;
-        // var middleOffset = screenOffset * 0.3;
-        // var leftOffset = screenOffset * 0.4;
+window.addEventListener('resize', function(){
+    var currentScreenWidth = window.innerWidth;
+    if (currentScreenWidth < 992) {
+        console.log(true);
+        console.log(currentScreenWidth);
+        var rightOffset = (currentScreenWidth - 992) * 0.2;
+        var middleOffset = (currentScreenWidth - 992) * 0.75;
+        var leftOffset = (currentScreenWidth - 992) * 0.7;
         right.style.right = rightOffset + 'px';//0
-        // middle.style.right = '+' + (-25 + middleOffset) + 'px';//-25
-        // left.style.right = '+' + (150 + leftOffset) + 'px';//150
+        middle.style.right = (-25 + middleOffset) + 'px';//-25
+        left.style.right = (150 + leftOffset) + 'px';//150
+    } else {
+        right.style.right = 0 + 'px';//0
+        middle.style.right = -25 + 'px';//-25
+        left.style.right = 150 + 'px';//150
     }
   });
 

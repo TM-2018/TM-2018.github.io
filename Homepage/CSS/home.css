@@ -10,6 +10,7 @@
     padding-top: 56px;
     margin: 0px auto;
     height: 300px;
+    overflow: hidden;
 }
 .homeText {
     flex-grow: 1;
