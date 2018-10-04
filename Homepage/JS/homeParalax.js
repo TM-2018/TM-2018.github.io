@@ -1,16 +1,16 @@
 var right = document.querySelector('.pearRight')
 var middle = document.querySelector('.pearMiddle');
 var left = document.querySelector('.pearLeft');
-// var screenOffset = window.scrollY;
 
-// window.addEventListener('scroll', function () {
-//     var rightOffset = screenOffset * 0.2;
-//     var middleOffset = screenOffset * 0.3;
-//     var leftOffset = screenOffset * 0.4;
-//     right.style.right = '+' + (0 + rightOffset) + 'px';//0
-//     middle.style.right = '+' + (-25 + middleOffset) + 'px';//-25
-//     left.style.right = '+' + (150 + leftOffset) + 'px';//150
-// })
+window.addEventListener('scroll', function () {
+    var screenOffset = window.scrollY;
+    var topRightOffset = screenOffset * 0.3;
+    var topMiddleOffset = screenOffset * 0.4;
+    var topLeftOffset = screenOffset * 0.5;
+    right.style.top = (0 + topRightOffset) + 'px';//0
+    middle.style.top = (25 + topMiddleOffset) + 'px';//25
+    left.style.top = (50 + topLeftOffset) + 'px';//50
+})
 
 window.addEventListener('resize', function(){
     var currentScreenWidth = window.innerWidth;
