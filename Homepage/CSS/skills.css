@@ -44,11 +44,12 @@
         font-family: 'Open Sans', 'Verdana', sans-serif;
     }
     .skills-slider-nav {
+        padding-top: 10px;
         display: flex;
         justify-content: center;
     }
     .skills-slider-nav .active {
-        color: #e49a22;
+        color: rgb(8, 170, 22);
     }
     .skills-slider-nav span {
         font-size: 50px;
@@ -74,11 +75,11 @@
         border-bottom: 20px solid transparent;
     }
       .skills-next-button {
-        border-left: 20px solid #e49a22;
+        border-left: 20px solid rgb(8, 170, 22);
         margin-left: 20px;
     }
       .skills-prev-button {
-        border-right:20px solid #e49a22; 
+        border-right:20px solid rgb(8, 170, 22); 
         margin-right: 20px;
     }
     

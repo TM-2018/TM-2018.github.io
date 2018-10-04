@@ -5,7 +5,7 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        height: 400px;
+        height: 350px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -52,53 +52,8 @@
         background-color: black;
         color:white;
     }
-    @media (min-width: 575.98px) {
-        form {
-            flex-wrap: nowrap;
-            min-height: 6vh;
-            justify-content: center;
-            margin-bottom: 30px;
-            margin-top: 60px; 
-            margin-left: 10px;
-            margin-right: 10px;
-        } 
-        .button {
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin-left: 10px;
-            font-size: 30px;
-        } 
-        .email {
-            margin-top: 0px;
-            margin-left: 10px;
-        }
-        h1.title {
-            font-size: 30px;
-        }
-        .photo {
-            height: 400px;
-        }
-        .name {
-            margin-bottom: 0px;
-        }
-    @media (max-width: 840px) {
-        .email {
-            margin-left: 0px;
-            font-size: 12px;
-        }
-        .name{
-            font-size: 12px;
-            margin-bottom: 0px;
-        }
-        .button {
-            margin-left: 0px;
-        }
+    @media (min-width: 576px) {
+        .name, .email, .message, .button {
+            font-size: 16px;
+        }   
     }
-    }
-    @media (min-width: 1312.98px) {
-        /* .photo {
-            height: 400px;
-        } */
-    }
-    
-  
