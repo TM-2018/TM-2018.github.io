@@ -28,18 +28,33 @@
     justify-self: end;
     position: relative;
 }
-.pearRight {
-    position: absolute;
-    right: 0px;
+.pearRight, .pearMiddle, .pearLeft {
+    display: none;
 }
-.pearMiddle {
-    position: absolute;
-    top: 25px;
-    right: -25px;
-}
-.pearLeft {
-    position: absolute;
-    top: 50px;
-    right: 150px;
 
+/* 576px */
+@media (min-width: 576px) {
+    .imageContainer {
+        flex-grow: 2;
+        align-self: baseline;
+        justify-self: end;
+        position: relative;
+    }
+    .pearRight, .pearMiddle, .pearLeft {
+        display: inline;
+    }
+    .pearRight {
+        position: absolute;
+        right: 0px;
+    }
+    .pearMiddle {
+        position: absolute;
+        top: 25px;
+        right: -25px;
+    }
+    .pearLeft {
+        position: absolute;
+        top: 50px;
+        right: 150px;
+    }
 }
