@@ -1,4 +1,7 @@
   
+    #contact {
+        padding-top: 56px;
+    }
     .photo {
         background: url('../Graphics/grass_2_scaled.jpg') no-repeat center center fixed; 
         -webkit-background-size: cover;
