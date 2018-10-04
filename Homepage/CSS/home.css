@@ -1,5 +1,4 @@
 #home {
-    /* background: rgb(180, 228, 180); */
     background: url(../Graphics/grass_2.png) no-repeat;
     background-size: 100% 356px;
     display: flex;
@@ -17,10 +16,27 @@
     margin-left: 20px;
 }
 .homeText p {
+    display:inline-block;
     padding: 10px 0px;
     color: white;
     font-size: 20px;
     font-weight: bold;
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+}
+.thirdLine span {
+    display: inline-block;
+    line-height: 1.5em;
+    color: white;
+    opacity: 1;
+    /* font-size: 20px; */
+    -webkit-transition: color 2s, opacity 2s;
+    transition: color 2s, opacity 2s;
+}
+.thirdLine span:hover {
+    color: rgb(8, 170, 22);
+    opacity: 0.1;
+    /* font-size: 10px; */
 }
 .imageContainer {
     flex-grow: 2;
