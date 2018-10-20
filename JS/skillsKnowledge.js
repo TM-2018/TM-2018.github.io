@@ -1,5 +1,5 @@
 var skills = document.querySelectorAll('.skill_knowledge');
-var skillsArray = [4,4,4,3,3,4,4]
+var skillsArray = [4,4,5,4,4,4,4]
     
 skills.forEach((element, index) => {
     for (var i = 0; i < 5; i ++) {
