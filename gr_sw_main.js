@@ -1,1 +1,1 @@
-importScripts(['https://beta-ga.getresponse.com/wpn/gr_sw.js']);
+importScripts(['https://ga.getresponse.com/wpn/gr_sw.js']);
